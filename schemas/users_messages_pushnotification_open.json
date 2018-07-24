@@ -1,0 +1,122 @@
+[
+  {
+    "description": "globally unique id for this event",
+    "mode": "REQUIRED",
+    "name": "id",
+    "type": "STRING"
+  },
+  {
+    "description": "BSON id of the user that this push notification was sent to",
+    "mode": "REQUIRED",
+    "name": "user_id",
+    "type": "STRING"
+  },
+  {
+    "description": "external user id of the user",
+    "mode": "NULLABLE",
+    "name": "external_user_id",
+    "type": "STRING"
+  },
+  {
+    "description": "unix timestamp at which the user opened the push",
+    "mode": "REQUIRED",
+    "name": "time",
+    "type": "INTEGER"
+  },
+  {
+    "description": "API ID of the app this action occurred on",
+    "mode": "REQUIRED",
+    "name": "app_id",
+    "type": "STRING"
+  },
+  {
+    "description": "API ID of the campaign this push notification belongs to",
+    "mode": "NULLABLE",
+    "name": "campaign_id",
+    "type": "STRING"
+  },
+  {
+    "description": "name of the campaign",
+    "mode": "NULLABLE",
+    "name": "campaign_name",
+    "type": "STRING"
+  },
+  {
+    "description": "API ID of the message variation this user received",
+    "mode": "NULLABLE",
+    "name": "message_variation_id",
+    "type": "STRING"
+  },
+  {
+    "description": "API ID of the canvas this push notification belongs to",
+    "mode": "NULLABLE",
+    "name": "canvas_id",
+    "type": "STRING"
+  },
+  {
+    "description": "name of the canvas",
+    "mode": "NULLABLE",
+    "name": "canvas_name",
+    "type": "STRING"
+  },
+  {
+    "description": "API ID of the canvas variation this user received",
+    "mode": "NULLABLE",
+    "name": "canvas_variation_id",
+    "type": "STRING"
+  },
+  {
+    "description": "API ID of the canvas step this push notification belongs to",
+    "mode": "NULLABLE",
+    "name": "canvas_step_id",
+    "type": "STRING"
+  },
+  {
+    "description": "API id of the canvas step message variation this user received",
+    "mode": "NULLABLE",
+    "name": "canvas_step_message_variation_id",
+    "type": "STRING"
+  },
+  {
+    "description": "platform of the device",
+    "mode": "NULLABLE",
+    "name": "platform",
+    "type": "STRING"
+  },
+  {
+    "description": "version of the operating system of the device",
+    "mode": "NULLABLE",
+    "name": "os_version",
+    "type": "STRING"
+  },
+  {
+    "description": "model of the device",
+    "mode": "NULLABLE",
+    "name": "device_model",
+    "type": "STRING"
+  },
+  {
+    "description": "message send ID this message belongs to",
+    "mode": "NULLABLE",
+    "name": "send_id",
+    "type": "STRING"
+  },
+  {
+    "description": "id of the device on which the event occurred",
+    "mode": "NULLABLE",
+    "name": "device_id",
+    "type": "STRING"
+  },
+  {
+    "description": "Action type of the push notification button. One of [URI, DEEP_LINK, NONE, CLOSE, SHARE]. null if not from a button click",
+    "mode": "NULLABLE",
+    "name": "button_action_type",
+    "type": "STRING"
+  },
+  {
+    "description": "identifier (button_string) of the push notification button clicked. null if not from a button click",
+    "mode": "NULLABLE",
+    "name": "button_string",
+    "type": "STRING"
+  }
+]

@@ -1,0 +1,80 @@
+[
+  {
+    "description": "globally unique id for this event",
+    "mode": "REQUIRED",
+    "name": "id",
+    "type": "STRING"
+  },
+  {
+    "description": "BSON id of the user that we sent the email to",
+    "mode": "REQUIRED",
+    "name": "user_id",
+    "type": "STRING"
+  },
+  {
+    "description": "external user id of the user",
+    "mode": "NULLABLE",
+    "name": "external_user_id",
+    "type": "STRING"
+  },
+  {
+    "description": "unix timestamp at which we sent the email",
+    "mode": "REQUIRED",
+    "name": "time",
+    "type": "INTEGER"
+  },
+  {
+    "description": "API ID of the campaign this email belongs to",
+    "mode": "NULLABLE",
+    "name": "campaign_id",
+    "type": "STRING"
+  },
+  {
+    "description": "name of the campaign",
+    "mode": "NULLABLE",
+    "name": "campaign_name",
+    "type": "STRING"
+  },
+  {
+    "description": "API ID of the message variation we sent",
+    "mode": "NULLABLE",
+    "name": "message_variation_id",
+    "type": "STRING"
+  },
+  {
+    "description": "email address of the user",
+    "mode": "REQUIRED",
+    "name": "email_address",
+    "type": "STRING"
+  },
+  {
+    "description": "API ID of the canvas this email belongs to",
+    "mode": "NULLABLE",
+    "name": "canvas_id",
+    "type": "STRING"
+  },
+  {
+    "description": "name of the canvas",
+    "mode": "NULLABLE",
+    "name": "canvas_name",
+    "type": "STRING"
+  },
+  {
+    "description": "API ID of the canvas variation this user received",
+    "mode": "NULLABLE",
+    "name": "canvas_variation_id",
+    "type": "STRING"
+  },
+  {
+    "description": "API ID of the canvas step this email belongs to",
+    "mode": "NULLABLE",
+    "name": "canvas_step_id",
+    "type": "STRING"
+  },
+  {
+    "description": "message send ID this message belongs to",
+    "mode": "NULLABLE",
+    "name": "send_id",
+    "type": "STRING"
+  }
+]

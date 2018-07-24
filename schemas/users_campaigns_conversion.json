@@ -1,0 +1,68 @@
+[
+  {
+    "description": "globally unique id for this event",
+    "mode": "REQUIRED",
+    "name": "id",
+    "type": "STRING"
+  },
+  {
+    "description": "BSON id of the user that converts",
+    "mode": "REQUIRED",
+    "name": "user_id",
+    "type": "STRING"
+  },
+  {
+    "description": "external user id of the user",
+    "mode": "NULLABLE",
+    "name": "external_user_id",
+    "type": "STRING"
+  },
+  {
+    "description": "API ID of the app on which this conversion occurred",
+    "mode": "NULLABLE",
+    "name": "app_id",
+    "type": "STRING"
+  },
+  {
+    "description": "unix timestamp at which the conversion happened",
+    "mode": "REQUIRED",
+    "name": "time",
+    "type": "INTEGER"
+  },
+  {
+    "description": "API ID of the campaign",
+    "mode": "REQUIRED",
+    "name": "campaign_id",
+    "type": "STRING"
+  },
+  {
+    "description": "name of the campaign",
+    "mode": "NULLABLE",
+    "name": "campaign_name",
+    "type": "STRING"
+  },
+  {
+    "description": "API ID of the message variation",
+    "mode": "NULLABLE",
+    "name": "message_variation_id",
+    "type": "STRING"
+  },
+  {
+    "description": "message send ID this message belongs to",
+    "mode": "NULLABLE",
+    "name": "send_id",
+    "type": "STRING"
+  },
+  {
+    "description": "index of the conversion behavior",
+    "mode": "NULLABLE",
+    "name": "conversion_behavior_index",
+    "type": "INTEGER"
+  },
+  {
+    "description": "JSON-encoded string describing the conversion behavior",
+    "mode": "NULLABLE",
+    "name": "conversion_behavior",
+    "type": "STRING"
+  }
+]
