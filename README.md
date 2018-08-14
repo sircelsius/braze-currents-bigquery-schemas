@@ -4,9 +4,25 @@ A set of Google BigQuery JSON schemas for [Braze Currents](https://www.braze.com
 
 :woman_factory_worker: this is work in progress, see the limitations section below.
 
+## Requirements
+
+You will need the following:
+
+  - [Terraform by HashiCorp](https://www.terraform.io/) as well as the `terraform` executable on your `PATH`.
+  - A service account JSON file to access your Google Cloud project. This service account should have the `BigQuery Data Editor` Role.
+  - A `provider "google"` Terraform resource file that points to your service account JSON.
+
+## Usage
+
+If your system fits the requirements described above, you can manage your infrastructure with usual Terraform commands.
+In particular:
+
+  1. `terraform plan` will show you the differences between your current infrastructure and the tables defined here.
+  1. `terraform apply` will create all the required resources.
+
 ## Motivation
 
-While Braze Currents are exported as [`.avro`](https://avro.apache.org/) files and therefore BigQuery can autoomagically detect schemas,
+While Braze Currents are exported as [`.avro`](https://avro.apache.org/) files and therefore BigQuery can automagically detect schemas,
 it can be useful to store these schemas as separate JSONs. One use case for this is you are using infrastructure
 management tools such as [Terraform by HashiCorp](https://www.terraform.io/).
 
